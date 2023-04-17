@@ -3,7 +3,7 @@ A tool for Fedora Linux to make some tasks less complex
 
 <h2>Installation for Fedora</h2>
 
-<h3>Install JDK:</h3>
+<h3>Install JDK (required):</h3>
 
 ```
 sudo dnf install java-17-openjdk-devel.x86_64
