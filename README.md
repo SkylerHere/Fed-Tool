@@ -1,5 +1,5 @@
 # Fed-Tool
-A tool for Fedora Linux to make some tasks less complex
+A tool for Fedora Linux that aims to make some tasks less complex
 
 <h2>Installation for Fedora</h2>
 
