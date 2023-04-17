@@ -38,7 +38,7 @@ javac fedtool.java
 cd Fed-Tool
 ```
 
-<h3>Run the Java class</h3>
+<h3>Run the compiled file:</h3>
 
 ```
 java fedtool
@@ -68,3 +68,12 @@ File path: Desktop
 ```
 Process name: kwrite
 ```
+
+<h3>Using fclone</h3>
+
+```
+Desired repo path: Desktop
+Name of the new repo folder: thefedtool
+Git repo URL: https://github.com/SkylerHere/Fed-Tool.git
+```
+
