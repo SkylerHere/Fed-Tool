@@ -77,3 +77,9 @@ Name of the new repo folder: thefedtool
 Git repo URL: https://github.com/SkylerHere/Fed-Tool.git
 ```
 
+<h3>Using dsearch</h3>
+
+```
+Package name: discord
+```
+
