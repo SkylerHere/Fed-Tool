@@ -12,10 +12,13 @@ public class fedtool
 
         System.out.print("cupdates (Check for updates)\n");
         System.out.print("iupdates (Install the available updates)\n");
+        System.out.print("dsearch (Search for an available dnf package)\n");
         System.out.print("fclone (Clone a git repository) - Requires [git] \n");
         System.out.print("nfold (Create a folder)\n");
         System.out.print("nfile (Create a file)\n");
         System.out.print("pkill (End a running process)\n");
+        System.out.print("mysensors (Get the current system temperature) - Requires [lm_sensors]\n");
+        System.out.print("nvidia-set (Open the nvidia settings)\n");
 
         System.out.print("\n--> ");
 
@@ -105,6 +108,42 @@ public class fedtool
 
             try {
                 runner.execute("kill " + process_name);
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+            System.out.println(runner.getOutput());
+        }//mysensors command
+        else if(command.equals("mysensors"))
+        {
+            SystemExecutor runner = new SystemExecutor(SystemExecutor.OutputCollection.ERRORS);
+
+            try {
+                runner.execute("sensors");
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+            System.out.println(runner.getOutput());
+        }//nvidia-set command
+        else if(command.equals("nvidia-set"))
+        {
+            SystemExecutor runner = new SystemExecutor(SystemExecutor.OutputCollection.ERRORS);
+
+            try {
+                runner.execute("nvidia-settings");
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+            System.out.println(runner.getOutput());
+        }//dsearch command
+        else if(command.equals("dsearch"))
+        {
+            System.out.print("\nPackage name: ");
+            String package_name = input.next();
+
+            SystemExecutor runner = new SystemExecutor(SystemExecutor.OutputCollection.ERRORS);
+
+            try {
+                runner.execute("dnf search " + package_name);
             } catch (IOException e) {
                 System.out.println(e);
             }
