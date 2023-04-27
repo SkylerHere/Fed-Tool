@@ -52,7 +52,7 @@ java fedtool
 
 ```
 Folder name: myFolder
-Folder location: Downloads
+Folder path: Downloads
 ```
 
 <h3>Using nfile</h3>
