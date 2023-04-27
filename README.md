@@ -1,7 +1,7 @@
 # Fed-Tool
 A tool for Fedora Linux that aims to make some tasks less complex
 
-<img src="https://i.ibb.co/7yYP56K/Screenshot-20230427-130225.png" height="300" width="600">
+<img src="https://i.ibb.co/7yYP56K/Screenshot-20230427-130225.png" height="300" width="550">
 
 <h2>Installation for Fedora</h2>
 
